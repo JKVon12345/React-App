@@ -1,7 +1,9 @@
 :root {
-  --background-color: lineargradient(blue, black)
+  color: DodgerBlue;
+  padding: 40px;
+  font-family: Arial;
 }
 
-.Iwin{
-  background-color: var(--background-color);
+h1{
+  color: red;
 }

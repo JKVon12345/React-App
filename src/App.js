@@ -1,7 +1,15 @@
 import React, {useState, useEffect, useReducer} from 'react';
 import CoursesList from './CoursesList'
 import Search from './Search';
+import styles from './App.css';
 
+var bgColors = { "Default": "#81b71a",
+                    "Blue": "#00B1E1",
+                    "Cyan": "#37BC9B",
+                    "Green": "#8CC152",
+                    "Red": "#E9573F",
+                    "Yellow": "#F6BB42",
+};
 
  const courses_data = [
    {
@@ -127,7 +135,7 @@ const App = () => {
 
   return (
     <div>
-      <h1>List of Courses</h1>
+      <h1 className={styles.bigblue}>List of Courses</h1>
       <hr/>
       <Search value={searchText} onSearch={handleSearch}/>
 
