@@ -127,7 +127,7 @@ const App = () => {
 
   return (
     <div>
-      <h1>List of Coursage</h1>
+      <h1>List of Courses</h1>
       <hr/>
       <Search value={searchText} onSearch={handleSearch}/>
 
