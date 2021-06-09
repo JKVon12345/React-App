@@ -1,7 +1,7 @@
-:root {
-  --background-color: lineargradient(blue, black)
+:root{  
+  --background-color: linear-gradient(#e66465, #9198e5);
 }
 
-.bodyType{
-  background-color: var(--background-color);
+.body {
+  background: var(--background-color);
 }

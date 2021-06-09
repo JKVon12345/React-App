@@ -135,12 +135,12 @@ const App = () => {
 
   return (
     <div>
-      <h1 className={styles.bigblue}>List of Courses</h1>
+      <h1 style={styles.bigblue}>List of Courses</h1>
       <hr/>
       <Search value={searchText} onSearch={handleSearch}/>
 
       {courses.isLoading ? (
-        <p>Loading courses...</p>
+        <p>Loading coursage...</p>
       ) : (
         <CoursesList courses={filteredCourses} handleRemoveCourse={handleRemoveCourse}/>
       )}
