@@ -1,9 +1,18 @@
 :root {
-  padding: 40px;
   font-family: Arial;
   width: 100%;
+  margin: 0px;
+}
+.all {
+  display: block;
 }
 
-h1{
-  color: red;
+.mainbody {
+  display: block;
+  background-image: url("DSC01080.JPG");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  height: 800px;
 }
+
+
