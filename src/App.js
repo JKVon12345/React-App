@@ -1,21 +1,36 @@
-import React, {useState, useEffect, useReducer} from 'react';
+import React, {Component} from 'react';
 import NavBar from './Components/NavBar.js';
 import PageMenu from './Components/PageMenu.js';
-import styles from './App.css';
+import './App.css';
+import DisplayData from './Components/ChamData.js'
 
 const playlists = ['hello', 'this', 'that']
 
-const App = () => {
 
-  return (
+class App extends Component {
+
+  constructor(props, context) {
+    super(props, context);
+
+    this.state = {
+      ip_address: "..."
+    };
+
+    // this.processRequest = this.processRequest.bind(this);
+  }
+
+  render () {
+    return (
     
-    <div className="all">
-      <NavBar PageTitle="JV Customs"/>
-      <div className="mainbody">
-        <PageMenu playlists={playlists}/>
+      <div className="all">
+        <NavBar PageTitle="JV Customs"/>
+        <DisplayData />
+        <div className="mainbody">
+          <PageMenu playlists={playlists}/>
+        </div>
       </div>
-    </div>
-  );
+    );  
+  }
 }
 
 export default App;
